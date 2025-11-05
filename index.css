@@ -1,0 +1,131 @@
+:root {
+  --bg: #c40000;
+  --card: #fff;
+  --text: #0f1a2b;
+  --muted: #6b7a99;
+  --primary: #c40000;
+  --primary-hover: #f1c40f;
+  --radius: 12px;
+  --shadow: 0 6px 20px rgba(255, 255, 255, 0.08);
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  color: var(--text);
+}
+
+.card {
+  width: 100%;
+  max-width: 360px;
+  background: var(--card);
+  padding: 32px 28px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: var(--primary);
+  text-align: center;
+}
+.sub { 
+  font-size: .95rem; 
+  color: var(--muted); 
+  text-align: center; 
+  margin-bottom: 20px;
+}
+
+form { display: grid; gap: 14px; }
+
+.field { display: grid; gap: 6px; }
+.label { font-size: .9rem; color: var(--muted); }
+.input {
+  padding: 12px 14px;
+  border: 1px solid #ccd5e6;
+  border-radius: var(--radius);
+  font: inherit;
+}
+.input:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px #2f6bff33;
+}
+
+.row {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: .9rem; margin-top: -6px;
+}
+.row label { color: var(--muted); display: flex; align-items:center; gap:6px; }
+.link { color: var(--primary); text-decoration: none; }
+.link:hover { text-decoration: underline; }
+
+.button {
+  padding: 12px 14px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  border: 0;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background .2s;
+}
+.button:hover { background: var(--primary-hover); }
+
+.foot {
+  text-align: center;
+  margin-top: 18px;
+  font-size: .9rem;
+  color: var(--muted);
+}
+.foot .link { font-weight: 600; }
+.card {
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(-20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+.button.loading {
+  position: relative;
+  color: transparent;
+  pointer-events: none;
+}
+
+.button.loading::after {
+  content: "⏳ Sedang masuk...";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 600;
+}
+.card {
+  width: 100%;
+  max-width: 360px;
+  background: var(--card);
+  padding: 32px 28px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12); 
+  animation: fadeIn 0.8s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18),
+              0 4px 12px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kerjaku — Masuk</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <section class="card">
+    <div class="logo">MakanYUK!</div>
+    <div class="sub">Masuk untuk melanjutkan</div>
+
+    <form id="loginForm">
+      <div class="field">
+        <label for="email" class="label">Email</label>
+        <input id="email" type="email" class="input" placeholder="nama@email.com" required />
+      </div>
+
+      <div class="field">
+        <label for="password" class="label">Kata Sandi</label>
+        <input id="password" type="password" class="input" placeholder="••••••••" required minlength="6" />
+      </div>
+
+      <div class="row">
+        <label><input type="checkbox" /> Ingat saya</label>
+        <a href="#" class="link">Lupa kata sandi?</a>
+      </div>
+        
+      <button class="button" type="submit">Masuk</button>
+    </form>
+
+    <div class="foot">
+      Belum punya akun? <a href="register.html" class="link">Daftar</a>
+    </div>
+  </section>
+  <script src="login.js"></script>
+</body>
+</html>
