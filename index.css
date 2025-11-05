@@ -129,3 +129,57 @@ form { display: grid; gap: 14px; }
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18),
               0 4px 12px rgba(0, 0, 0, 0.1);
 }
+/* ====== RESPONSIVE DESIGN ====== */
+
+/* Untuk layar tablet dan ponsel */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+    display: block;
+  }
+
+  .card {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 24px 20px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .sub {
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+  }
+
+  .input {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+  }
+}
+/* Untuk layar sangat kecil (ponsel mini) */
+@media (max-width: 480px) {
+  .card {
+    padding: 20px 16px;
+    border-radius: 10px;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .input, .button {
+    font-size: 0.9rem;
+  }
+
+  .sub {
+    font-size: 0.85rem;
+  }
+}
