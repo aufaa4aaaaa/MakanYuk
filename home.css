@@ -17,51 +17,6 @@ header {
     width: 100%;
     z-index: 1000;
 }
-/* Tombol menu hamburger */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 28px;
-  color: #c40000;
-  cursor: pointer;
-}
-
-/* RESPONSIVE NAVBAR */
-@media (max-width: 900px) {
-  .top-bar {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #fff;
-    text-align: center;
-    border-top: 1px solid #eee;
-  }
-
-  .menu.show {
-    display: flex;
-  }
-
-  .menu a {
-    padding: 14px 0;
-    border-bottom: 1px solid #eee;
-    color: #c40000;
-  }
-
-  .menu a:hover {
-    background: #f1c40f;
-    color: #fff;
-  }
-}
 
 
 .top-bar {
