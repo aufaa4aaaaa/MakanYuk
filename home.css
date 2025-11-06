@@ -17,6 +17,15 @@ header {
     width: 100%;
     z-index: 1000;
 }
+/* Tombol menu hamburger */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #c40000;
+  cursor: pointer;
+}
 
 /* RESPONSIVE NAVBAR */
 @media (max-width: 900px) {
@@ -53,6 +62,7 @@ header {
     color: #fff;
   }
 }
+
 
 .top-bar {
     display: flex;
